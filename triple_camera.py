@@ -58,10 +58,10 @@ def recorder1(q,ctl,l):
                 if FPS != 0:
                     cap.set(3, WIDTH)
                     cap.set(4, HEIGHT)
-                    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'XVID'))
+                    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M','J','P','G'))
                     status = 1
 
-        if status == 1:
+        elif status == 1:
             try:
                 ret, f = cap.read()
             except:
@@ -106,10 +106,10 @@ def recorder2(q,ctl,l):
                 if FPS != 0:
                     cap.set(3, WIDTH)
                     cap.set(4, HEIGHT)
-                    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'XVID'))
+                    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M','J','P','G'))
                     status = 1
 
-        if status == 1:
+        elif status == 1:
             try:
                 ret, f = cap.read()
             except:
@@ -154,10 +154,10 @@ def recorder3(q,ctl,l):
                 if FPS != 0:
                     cap.set(3, WIDTH)
                     cap.set(4, HEIGHT)
-                    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'XVID'))
+                    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M','J','P','G'))
                     status = 1
 
-        if status == 1:
+        elif status == 1:
             try:
                 ret, f = cap.read()
             except:
